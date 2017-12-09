@@ -1,0 +1,19 @@
+apply plugin : 'java'
+
+	sourceSets{
+		src{
+			main{
+			java{}
+			resources{}
+				}
+			}
+	}
+	
+	repositories{
+	mavenCentral()
+	}
+	dependencies{
+	// https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox
+		compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.8'
+	
+	}
